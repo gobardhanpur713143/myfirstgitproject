@@ -13,6 +13,7 @@ const registerRouter = require("./router/publicRouter/register");
 const publicPosts = require("./router/protcetRouter/publicPosts");
 const logoutRouter = require("./router/protcetRouter/logout");
 const acountRouter = require("./router/protcetRouter/acount");
+const port = process.env.PORT || 5000
 
 
 
@@ -51,6 +52,6 @@ app.use((err, req, res, next) => {
       
 })
 
-app.listen(5000, () => {
+app.listen(port, () => {
     console.log("server is running at port 5000");
 });
